@@ -1,0 +1,35 @@
+# Install native apps
+brew install phinze/cask/brew-cask
+brew tap caskroom/versions
+
+function installcask() {
+	brew cask install "${@}"
+}
+
+# Install natives 
+installcask alfred
+installcask android-studio-bundle
+# Keep sudo
+sudo -v
+installcask copy
+installcask dash
+installcask evernote
+installcask filezilla
+installcask firefox
+installcask gog-downloader
+installcask google-chrome
+installcask google-drive
+# Keep sudo
+sudo -v
+installcask iterm2
+installcask mysqlworkbench
+installcask screenhero
+installcask skype
+installcask spotify
+# Keep sudo
+sudo -v
+installcask teamspeak-client
+installcask the-unarchiver
+installcask transmission
+installcask trim-enabler
+installcask vlc
