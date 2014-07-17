@@ -16,16 +16,24 @@ installcask dash
 installcask evernote
 installcask filezilla
 installcask firefox
+installcask gifrocket
 installcask gog-downloader
 installcask google-chrome
 installcask google-drive
+installcask google-hangouts
 # Keep sudo
 sudo -v
+installcask imagealpha
+installcask imageoptim
+installcask img2icns
 installcask iterm2
+installcask miro-video-converter
 installcask mysqlworkbench
+installcask openemu
 installcask screenhero
 installcask skype
 installcask spotify
+installcask steam
 # Keep sudo
 sudo -v
 installcask teamspeak-client

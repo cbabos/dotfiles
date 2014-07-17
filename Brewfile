@@ -28,8 +28,6 @@ install git
 install imagemagick --with-webp
 install lynx
 install mc
-install mpd 
-install mpc
 install node
 install pigz
 install rename

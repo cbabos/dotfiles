@@ -60,7 +60,7 @@ sudo -v
 source ~/.cask
 
 # Install some node.js utilities globally
-npm install -g bower generator-webapp yo gulp browser-sync
+npm install -g yo gulp generator-webapp phonegap cordova browser-sync weinre 
 
 # Install OSX settings
 source ~/.osx
