@@ -86,12 +86,12 @@ set backspace=indent,eol,start
         nnoremap <leader>sv :source $MYVIMRC<cr>
 
                                   " Yank text to the OS X clipboard
-        noremap <leader>y "*y
-        noremap <leader>Y "*Y
+        map <leader>y "*y
+        map <leader>Y "*Y
 
                                   " Preserve indentation while pasting text " from the OS X clipboard noremap <leader>p :set paste<cr>:put *<cr>:set nopaste<cr>
-        noremap <leader>P :set paste<cr>:put! *<cr>:set nopaste<cr>
-        noremap <leader>p :set paste<cr>:put! *<cr>:set nopaste<cr>
+        map <leader>P :set paste<cr>:put! *<cr>:set nopaste<cr>
+        map <leader>p :set paste<cr>:put! *<cr>:set nopaste<cr>
 
                                   " Get the path of the current file
         noremap <c-i> :echo expand("%:p")<cr>
@@ -121,9 +121,6 @@ set backspace=indent,eol,start
         vnoremap ip i<
         vnoremap ap a<
 
-        vnoremap <leader>y "*y
-
-        vnoremap <leader>p <esc>:set paste<cr>gv"*p:set nopaste<cr>
     " }}}
 
     " command-line mode {{{

@@ -2,17 +2,12 @@
 
 # This function will sync dotfiles to the homefolder
 function copyDotFiles() {
-	rsync --exclude ".git/"       \
-	      --exclude ".DS_Store"   \ 
-	      --exclude "setup.sh"    \
-	      --exclude "README.md"   \
-	      --exclude "themes"      \
-	      --exclude "fonts"       \
-	      --exclude "prefs"       \
-	      --exclude "Brewfile"    \
-	      --exclude ".cask"       \
-	      --exclude ".osx"        \
-	      -av --no-perms . ~
+rsync --exclude ".git/" --exclude ".DS_Store" \
+      --exclude "setup.sh" --exclude "README.md" \
+      --exclude "themes" --exclude "fonts" \
+      --exclude "prefs" --exclude "Brewfile" \
+      --exclude ".cask" --exclude ".osx" \
+      -avh --no-perms . ~;
 }
 
 # Initial source folder 
