@@ -29,6 +29,7 @@ installcask img2icns
 installcask iterm2
 installcask miro-video-converter
 installcask mysqlworkbench
+installcask node
 installcask openemu
 installcask screenhero
 installcask skype
