@@ -28,6 +28,7 @@ install git
 install imagemagick --with-webp
 install lynx
 install mc
+install node
 install pigz
 install rename
 install rhino
