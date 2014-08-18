@@ -1,10 +1,23 @@
-execute pathogen#infect()
+"execute pathogen#infect()
 
 set nocompatible
 let mapleader=','
 let g:mapleader=','
 let maplocalleader=','
 let g:maplocalleader=','
+
+" Install plugins with vundle
+filetype off 
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+" we'll handling vundle by itself
+Plugin 'gmarik/vundle'
+" Install emmet for vim
+Plugin 'mattn/emmet-vim'
+" My favourite color scheme
+Plugin 'altercation/vim-colors-solarized'
+" Javascript syntax highlight and indentation
+Plugin 'pangloss/vim-javascript'
 
 " Preferences
 "   Presentation

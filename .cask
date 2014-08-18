@@ -7,7 +7,6 @@ function installcask() {
 }
 
 # Install natives 
-installcask alfred
 installcask android-studio-bundle
 # Keep sudo
 sudo -v
@@ -28,11 +27,10 @@ installcask imageoptim
 installcask img2icns
 installcask iterm2
 installcask miro-video-converter
+installcask mplayerx
 installcask mysqlworkbench
 installcask openemu
-installcask screenhero
 installcask skype
-installcask spotify
 installcask steam
 # Keep sudo
 sudo -v

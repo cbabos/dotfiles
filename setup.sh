@@ -54,8 +54,22 @@ sudo -v
 # Install native applications using cask
 source ~/.cask
 
+# Install vundle for vim
+echo -n "Installing vim plugins... "
+
+# Install vundle plugin manager (if not installed already)
+local vundle_dir="${HOME}/.vim/bundle/vundle"
+if [ ! -d "${vundle_dir}" ]; then
+    local vundle_repository="https://github.com/gmarik/vundle.git"
+    git clone -q "${vundle_repository}" "${vundle_dir}"
+fi
+
+# Install the plugins
+vim -c "BundleInstall" -c "qa"
+
+
 # Install some node.js utilities globally
-npm install -g yo gulp generator-webapp phonegap cordova browser-sync weinre 
+npm install -g yo gulp generator-webapp cca browser-sync weinre 
 
 # Install OSX settings
 source ~/.osx
