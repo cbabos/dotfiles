@@ -9,28 +9,18 @@ function installcask() {
 installcask android-studio-bundle
 # Keep sudo
 sudo -v
-installcask copy
 installcask dash
 installcask evernote
 installcask filezilla
-installcask firefox
-installcask gifrocket
-installcask gog-downloader
 installcask google-chrome
-installcask google-drive
 installcask google-hangouts
 # Keep sudo
 sudo -v
 installcask imagealpha
 installcask imageoptim
-installcask img2icns
 installcask iterm2
-installcask miro-video-converter
-installcask mplayerx
 installcask mysqlworkbench
-installcask openemu
 installcask skype
-installcask steam
 # Keep sudo
 sudo -v
 installcask teamspeak-client
