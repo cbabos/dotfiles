@@ -5,9 +5,7 @@ function copyDotFiles() {
 rsync --exclude ".git/" --exclude ".DS_Store" \
       --exclude "setup.sh" --exclude "README.md" \
       --exclude "themes" --exclude "fonts" \
-      --exclude "prefs" --exclude "Brewfile" \
-      --exclude ".cask" --exclude ".osx" \
-      -avh --no-perms . ~;
+      --exclude "prefs" -avh --no-perms . ~;
 }
 
 # Initial source folder 
@@ -20,21 +18,17 @@ echo ""
 echo "Please follow the instructions on the screen."
 echo ""
 
-# Installing dotfiles
-copyDotFiles
-
-# Call gcc to install xcode console tools 
-gcc
-
 # Install some fonts to the system
 cp $SRCDIR/fonts/* ~/Library/Fonts/
 
 # Install Oh-My-Zsh 
 curl -L http://install.ohmyz.sh | sh
-# Install the original agnoster theme
-cp $SRCDIR/themes/agnoster.zsh-theme ~/.oh-my-zsh/themes/agnoster.zsh-theme
 # Install my zshrc
 cp $SRCDIR/.zshrc ~/.zshrc
+
+# Installing dotfiles
+copyDotFiles
+
 
 # Getting sudo 
 sudo -v
