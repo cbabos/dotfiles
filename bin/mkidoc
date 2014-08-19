@@ -1,0 +1,5 @@
+#!/bin/sh
+mkdir -p $1/{Android,HTML5,NW,src}
+cd $1/src
+git init
+yo idoctum
