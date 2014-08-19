@@ -52,9 +52,9 @@ source ~/.cask
 echo -n "Installing vim plugins... "
 
 # Install vundle plugin manager (if not installed already)
-local vundle_dir="${HOME}/.vim/bundle/vundle"
+vundle_dir="${HOME}/.vim/bundle/vundle"
+vundle_repository="https://github.com/gmarik/vundle.git"
 if [ ! -d "${vundle_dir}" ]; then
-    local vundle_repository="https://github.com/gmarik/vundle.git"
     git clone -q "${vundle_repository}" "${vundle_dir}"
 fi
 

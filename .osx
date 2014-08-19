@@ -449,7 +449,7 @@ fi;
 #defaults write org.x.X11 wm_ffm -bool true
 
 # Install the Twilight theme for iTerm
-open "./themes/Twilight.itermcolors"
+open "./themes/Zenburn.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
@@ -542,7 +542,7 @@ defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://
 
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	"Dock" "Finder" "Mail" "Messages" "Safari" "SizeUp" "SystemUIServer" \
-	"Terminal" "Transmission" "Twitter" "iCal"; do
+	"Transmission" "Twitter" "iCal"; do
 	killall "${app}" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
