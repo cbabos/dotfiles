@@ -14,8 +14,6 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 " Install emmet for vim
 Plugin 'mattn/emmet-vim'
-" My favourite color scheme
-Plugin 'altercation/vim-colors-solarized'
 " Javascript syntax highlight and indentation
 Plugin 'pangloss/vim-javascript'
 
@@ -37,7 +35,7 @@ set listchars=tab:\ \ ,trail:\ ,extends:#,nbsp:.
 
 "   Theme
 set background=dark
-colorscheme solarized
+colorscheme twilight 
 
 "   Behaviour
                           " Don't make a backup before overwriting a
