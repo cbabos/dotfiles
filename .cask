@@ -9,9 +9,12 @@ function installcask() {
 installcask android-studio-bundle
 # Keep sudo
 sudo -v
+installcask calibre
 installcask dash
 installcask evernote
+installcask github
 installcask filezilla
+installcask flash
 installcask google-chrome
 installcask google-hangouts
 # Keep sudo
@@ -19,6 +22,7 @@ sudo -v
 installcask imagealpha
 installcask imageoptim
 installcask iterm2
+installcask libreoffice
 installcask mysqlworkbench
 installcask skype
 # Keep sudo
