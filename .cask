@@ -31,4 +31,5 @@ installcask teamspeak-client
 installcask the-unarchiver
 installcask transmission
 installcask trim-enabler
+installcask unity-web-player
 installcask vlc
