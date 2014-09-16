@@ -14,7 +14,9 @@ installcask dash
 installcask evernote
 installcask github
 installcask filezilla
+installcask firefox
 installcask flash
+installcask gog-downloader
 installcask google-chrome
 installcask google-hangouts
 # Keep sudo
@@ -25,6 +27,7 @@ installcask iterm2
 installcask libreoffice
 installcask mysqlworkbench
 installcask skype
+installcask steam
 # Keep sudo
 sudo -v
 installcask teamspeak-client
@@ -32,4 +35,5 @@ installcask the-unarchiver
 installcask transmission
 installcask trim-enabler
 installcask unity-web-player
+installcask viber
 installcask vlc
