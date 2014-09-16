@@ -27,8 +27,8 @@ install pv
 install git
 install imagemagick --with-webp
 install lynx
-install mc
 install node
+install nmap
 install pigz
 install rename
 install rhino
