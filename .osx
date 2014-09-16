@@ -449,7 +449,7 @@ fi;
 #defaults write org.x.X11 wm_ffm -bool true
 
 # Install the Twilight theme for iTerm
-open "./themes/Twilight.itermcolors"
+open "./themes/Seafoam\ Pastel.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false

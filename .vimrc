@@ -20,6 +20,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'editorconfig/editorconfig-vim'
 " Markdown
 Plugin 'plasticboy/vim-markdown'
+" Nerdtree
 
 " Preferences
 "   Presentation
@@ -107,6 +108,7 @@ set backspace=indent,eol,start
                                   " Preserve indentation while pasting text " from the OS X clipboard noremap <leader>p :set paste<cr>:put *<cr>:set nopaste<cr>
         map <leader>P :set paste<cr>:put! *<cr>:set nopaste<cr>
         map <leader>p :set paste<cr>:put! *<cr>:set nopaste<cr>
+        map <leader>nt :NERDTree
 
                                   " Get the path of the current file
         noremap <c-i> :echo expand("%:p")<cr>
