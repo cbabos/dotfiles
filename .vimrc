@@ -16,6 +16,10 @@ Plugin 'gmarik/vundle'
 Plugin 'mattn/emmet-vim'
 " Javascript syntax highlight and indentation
 Plugin 'pangloss/vim-javascript'
+" Editorconfig
+Plugin 'editorconfig/editorconfig-vim'
+" Markdown
+Plugin 'plasticboy/vim-markdown'
 
 " Preferences
 "   Presentation
