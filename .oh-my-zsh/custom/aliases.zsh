@@ -13,8 +13,7 @@ alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
 
 # Recursively delete unnecessary files
-alias cleanup="find . -type f \( -name ".DS_Store" -o -name "Thumbs.db" \) -ls
- -delete"
+alias cleanup="find . -type f \( -name ".DS_Store" -o -name "Thumbs.db" \) -ls -delete"
 
 # Sufix aliases
 alias -g C="| wc -l | tr -d ' '" # e.g. grep alias ~/.zsh/* C
