@@ -1,0 +1,25 @@
+#!/usr/bin/php
+<?php
+$sizesDroid = Array(16,36,48,57,72,96,114,128,144);
+$sizesApple = Array(29,40,50,57,58,60,72,76,80,512);
+
+mkdir('droid'); mkdir('ios');
+chmod('droid', 0777); chmod('ios', 0777);
+
+# Droid section
+$command = 'convert icon.png -resize %x% droid/icon%.png';
+if (file_exists('./icon.png')) {
+    foreach ($sizesDroid as $size) {
+        exec( str_replace('%', $size, $command) );
+    }
+}
+
+# iOS section
+$command = 'convert icon.png -resize wxw ios/icon-w.png';
+$command2 = 'convert icon.png -resize yxy ios/icon-w@2.png'; 
+if (file_exists('./icon.png')) {
+    foreach ($sizesApple as $size) {
+        exec( str_replace('w', $size, $command) );
+        exec( str_replace('y', $size*2, str_replace('w', $size, $command2) ) );
+    }
+}

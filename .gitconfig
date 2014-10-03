@@ -1,0 +1,53 @@
+[push]
+	default = simple
+
+[user]
+    name = Csaba Babos 
+    email = babosc@gmail.com
+
+[core]
+    editor = vim
+    ; indenting with space
+    whitespace = -space-before-tab,tab-in-indent,trailing-space
+    ; indenting with tab
+    ;whitespace = -space-before-tab,trailing-space,indent-with-non-tab,space-before-tab,tabwidth=4
+    excludesfile = ~/.gitignore-global
+    attributesfile = ~/.gitattributes-global
+
+[merge]
+    tool = vimdiff
+
+[diff "exif"]
+    ; you have to install exiftool first
+    textconv = exiftool -s2 -common --filename
+
+[color]
+    ui = auto
+
+[alias]
+    sh = show
+
+    ; similar to: git log --decorat --pretty=oneline
+    lg = "!git-pretty-log"
+    lga = !git lg --all
+    ; recent commits
+    rc = !git lg -30
+    rca = !git rc --all
+
+    di = diff
+    dc = diff --cached
+    st = status
+
+    ; it is like: git rm -r --cached foo && git add foo
+    aa = add --all
+    ; unstage file(s)
+    unstage = reset HEAD --
+
+    ci = commit
+    amend = commit --amend
+
+    br = branch
+    co = checkout
+    tg = tag
+    pom = push origin master
+
