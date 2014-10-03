@@ -35,6 +35,8 @@ fi
 # Install the plugins
 vim -c "BundleInstall" -c "qa"
 
-# Install some node.js utilities globally
-sudo npm install -g yo gulp generator-webapp cca browser-sync weinre 
+# Add base16 gnome-terminal colour scheme
+git clone https://github.com/chriskempson/base16 ~/base16 
+~/base16/base16-tomorrow.dark.sh 
+rm -Rf ~/base16
 
