@@ -3,10 +3,6 @@ This is a simple dotfiles repo for my desktop.
 It's containing personal configuration so feel free to modify it if you fork it. 
 
 ## Basic environment
-* [Node.JS](http://nodejs.org/)
-* [Gulp](http://gulpjs.com)
-* [Browsersync](http://browsersync.io/)
-* [Yeoman](http://yeoman.io/)
 * [VIM](http://www.vim.org/)
 * [Oh My Zsh](http://ohmyz.sh/)
 
@@ -16,6 +12,6 @@ Some additional configurations are from [loonkwil](https://github.com/loonkwil/d
 
 A small list about the topic of what configurations have this repo: 
 
-* iTerm2 settings (colorscheme, used fonts, etc.)
-* Oh-My-Zsh configuration (original agnoster theme, some plugins activated, etc.)
-* OS X system and UI settings
+* Oh-My-Zsh configuration (some plugins activated, etc.)
+* gnome-terminal and vim colorscheme by [chriskempson](https://github.com/chriskempson/base16)'s colorschemes 
+* vim plugins used by me
