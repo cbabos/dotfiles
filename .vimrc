@@ -47,7 +47,7 @@ set listchars=tab:\ \ ,trail:\ ,extends:#,nbsp:.
 
 "   Theme
 set background=dark
-colorscheme base16-bespin
+colorscheme base16-twilight
 
 "   Behaviour
                           " Don't make a backup before overwriting a
@@ -109,12 +109,12 @@ set backspace=indent,eol,start
         nnoremap <leader>sv :source $MYVIMRC<cr>
 
                                   " Yank text to the OS X clipboard
-        map <leader>y "*y
-        map <leader>Y "*Y
+        map <leader>y "+y
+        map <leader>Y "+Y
 
                                   " Preserve indentation while pasting text " from the OS X clipboard noremap <leader>p :set paste<cr>:put *<cr>:set nopaste<cr>
-        map <leader>P :set paste<cr>:put! *<cr>:set nopaste<cr>
-        map <leader>p :set paste<cr>:put! *<cr>:set nopaste<cr>
+        map <leader>P :set paste<cr>:put! +<cr>:set nopaste<cr>
+        map <leader>p :set paste<cr>:put! +<cr>:set nopaste<cr>
         map <leader>nt :NERDTree<cr>
         map <leader>b :Bookmark 
 
