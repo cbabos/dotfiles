@@ -1,0 +1,24 @@
+music_directory        "/home/cbabos/Music"
+playlist_directory     "/home/cbabos/.mpd/playlists"
+db_file            "/home/cbabos/.mpd/tag_cache"
+log_file        "/home/cbabos/.mpd/mpd.log"
+pid_file        "/home/cbabos/.mpd/mpd.pid"
+state_file        "/home/cbabos/.mpd/mpdstate"
+
+### PULSE AUDIO ######################################
+audio_output {
+    type    "pulse"
+    name    "MPD"                                                                 
+}
+
+### ALSA #############################################
+#audio_output {
+#    type        "alsa"
+#    name        "My ALSA Device"
+#    device        "hw:0,0"    # optional
+#    format        "44100:16:2"    # optional
+#    mixer_device    "default"    # optional
+#    mixer_control    "PCM"        # optional
+#    mixer_index    "0"        # optional
+#}
+

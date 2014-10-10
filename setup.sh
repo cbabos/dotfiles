@@ -34,10 +34,8 @@ fi
 # Install the plugins
 vim -c "BundleInstall" -c "qa"
 
-# Add base16 gnome-terminal colour scheme
-git clone https://github.com/chriskempson/base16-gnome-terminal ~/base16 
-~/base16/base16-tomorrow.dark.sh 
-rm -Rf ~/base16
+# Create mpd folder structure
+mkdir -p .mpd/playlists
 
 # Install node.js
 ./install-node-js.sh
