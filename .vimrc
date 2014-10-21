@@ -33,6 +33,8 @@ set colorcolumn=81
 set title
 set showmode
 syntax enable
+" Maximum count of tabs
+set tabpagemax=50
 "set number
 set encoding=utf8 nobomb  " Use UTF-8 without BOM
                           " Use Unix as the standard file type
