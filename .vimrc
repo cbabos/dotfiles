@@ -31,6 +31,8 @@ Plugin 'chriskempson/base16-vim'
 
 " Preferences
 "   Presentation
+" Maximum count of tabs
+set tabpagemax=50
 set smartindent expandtab shiftwidth=4 tabstop=4
 filetype plugin on
 set colorcolumn=81
