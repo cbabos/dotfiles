@@ -1,0 +1,16 @@
+#!/bin/bash
+echo "Updating project resources..."
+#bower update
+cd app && mkico && cd ..
+rm ../static/build/app.nw
+echo "Starting building process..."
+./build.sh
+echo "Preconfigure dist"
+cd dist
+mv node-webkit.json package.json
+rm .htaccess
+mkdir -p ../../static/build
+echo "Publishing app.nw to ../static/build/app.nw"
+zip -r ../../static/build/app.nw .
+cd ..
+
