@@ -49,7 +49,7 @@ set listchars=tab:\ \ ,trail:\ ,extends:#,nbsp:.
 
 "   Theme
 set background=dark
-colorscheme base16-twilight
+colorscheme desert 
 
 "   Behaviour
                           " Don't make a backup before overwriting a
