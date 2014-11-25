@@ -24,10 +24,6 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdtree'
 " HTML5 syntax highlight
 Plugin 'othree/html5.vim'
-" Solarized Dark theme
-Plugin 'altercation/vim-colors-solarized'
-" Base 16 vim colours
-Plugin 'chriskempson/base16-vim'
 
 " Preferences
 "   Presentation
