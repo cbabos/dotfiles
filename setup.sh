@@ -21,6 +21,12 @@ rsync --exclude ".git/" --exclude ".DS_Store" \
       --exclude "themes" --exclude "fonts" \
       --exclude "prefs" -avh --no-perms . ~;
 
+# Install color scheme for terminals (xterm)
+git clone https://github.com/chriskempson/base16-xresources.git ~/xresources
+xrdb ~/xresources/base16-xresources/base16-twilight.dark.256.xresources
+## Cleanup 
+rm -Rf ~/xresources
+
 # Install vundle for vim
 echo -n "Installing vim plugins... "
 
