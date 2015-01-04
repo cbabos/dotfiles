@@ -40,7 +40,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 sudo -v
 
 # Install my Brew Bundle
-cd ~ && brew bundle
+source ~/Brewfile
 
 # Keeping sudo 
 sudo -v

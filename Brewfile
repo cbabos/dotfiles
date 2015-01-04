@@ -1,43 +1,43 @@
 # Make sure we're using the latest Homebrew
-update
+brew update
 
 # Upgrade any already-installed formulae
-upgrade
+brew upgrade
 
-# Install GNU core utilities (those that come with OS X are outdated)
+# brew install GNU core utilities (those that come with OS X are outdated)
 # Don't forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-install coreutils
-# Install some other useful utilities like `sponge`
-install moreutils
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-install findutils
-# Install zsh
-install zsh
+brew install coreutils
+# brew install some other useful utilities like `sponge`
+brew install moreutils
+# brew install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew install findutils
+# brew install zsh
+brew install zsh
 
-# Install more recent versions of some OS X tools
-install vim --override-system-vi
-install homebrew/dupes/grep
+# brew install more recent versions of some OS X tools
+brew install vim --override-system-vi
+brew install homebrew/dupes/grep
 
-# Install brew cask
-install cask
+# brew install brew cask
+brew install cask
 
-# Install other useful binaries
-install ack
-install pv
-install git
-install imagemagick --with-webp
-install lynx
-install node
-install nmap
-install pigz
-install rename
-install rhino
-install tree
-install webkit2png
-install zopfli
-install p7zip
+# brew install other useful binaries
+brew install ack
+brew install pv
+brew install git
+brew install imagemagick --with-webp
+brew install lynx
+brew install node
+brew install nmap
+brew install pigz
+brew install rename
+brew install rhino
+brew install tree
+brew install webkit2png
+brew install zopfli
+brew install p7zip
 
-install homebrew/versions/lua52
+brew install homebrew/versions/lua52
 
 # Remove outdated versions from the cellar
-cleanup
+brew cleanup
