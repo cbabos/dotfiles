@@ -34,7 +34,7 @@ copyDotFiles
 sudo -v
 
 # Install homebrew 
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Keeping sudo 
 sudo -v
