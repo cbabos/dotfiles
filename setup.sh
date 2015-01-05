@@ -65,5 +65,8 @@ vim -c "BundleInstall" -c "qa"
 # Install some node.js utilities globally
 npm install -g yo gulp generator-webapp cca browser-sync weinre 
 
+# Install composer 
+curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=bin
+
 # Install OSX settings
 source ~/.osx
