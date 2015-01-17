@@ -1,72 +1,90 @@
 #!/bin/sh
 
+## Configuration
+# Brew packages
+BREW_PACK=(\
+    coreutils \
+    moreutils \
+    findutils \
+    zsh \
+    homebrew/dupes/grep \
+    cask \
+    ack \
+    pv \
+    git \
+    lynx \
+    nmap \
+    pigz \
+    rename \ 
+    rhino \
+    tree \
+    webkit2png \
+    zopfli \
+    p7zip \
+    "vim --override-system-vi" \
+    "imagemagick --with-webp" \
+    lua \
+    node \
+)
+
+# Native Apps to install with brew-cask
+BREW_CASK_PACK=(\
+    android-studio \
+    google-chrome \
+    imagealpha \
+    imageoptim \
+    libreoffice \
+    mysqlworkbench \
+    skype \
+    steam \
+    transmission \
+    trim-enabler \
+    vlc \
+)
+
+# Needed node.js | io.js packages
+NODE_PACKAGES=(\
+    gulp \
+    browser-sync \
+    bower \
+    grunt \
+    grunt-cli \
+    yo \
+    generator-webapp \
+)
+
 # This function will sync dotfiles to the homefolder
 function copyDotFiles() {
-rsync --exclude ".git/" --exclude ".DS_Store" \
+  rsync --exclude ".git/" --exclude ".DS_Store" \
       --exclude "setup.sh" --exclude "README.md" \
       --exclude "themes" --exclude "fonts" \
       --exclude "prefs" -avh --no-perms . ~;
 }
 
-# Initial source folder 
-SRCDIR=$(pwd)
-
-# Write some information
-echo "cbabos's dotfiles"
-echo "================="
-echo ""
-echo "Please follow the instructions on the screen."
-echo ""
-
-# Install some fonts to the system
-cp $SRCDIR/fonts/* ~/Library/Fonts/
-
-# Install Oh-My-Zsh 
-curl -L http://install.ohmyz.sh | sh
-# Install my zshrc
-cp $SRCDIR/.zshrc ~/.zshrc
-
-# Installing dotfiles
-copyDotFiles
-
-
-# Getting sudo 
-sudo -v
-
-# Install homebrew 
+# Install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Keeping sudo 
-sudo -v
+# Updating and upgrading brew
+# Later (after we activated zsh with oh-my-zsh) you can use `bubu` alias for this 
+brew update && brew upgrade
 
-# Install my Brew Bundle
-source ~/Brewfile
+# Install brew packages defined in config
+for package in $BREW_PACK 
+do 
+    brew install $package
+done
 
-# Keeping sudo 
-sudo -v
+# Install native apps with brew-cask as defined in config
+for package in $BREW_CASK_PACK 
+do 
+    brew cask install $package
+done
 
-# Install native applications using cask
-source ~/.cask
+# Install node.js packages defined in config
+for package in $NODE_PACKAGES 
+do 
+    npm install -g $package
+done
 
-# Install vundle for vim
-echo -n "Installing vim plugins... "
-
-# Install vundle plugin manager (if not installed already)
-vundle_dir="${HOME}/.vim/bundle/vundle"
-vundle_repository="https://github.com/gmarik/vundle.git"
-if [ ! -d "${vundle_dir}" ]; then
-    git clone -q "${vundle_repository}" "${vundle_dir}"
-fi
-
-# Install the plugins
-vim -c "BundleInstall" -c "qa"
-
-
-# Install some node.js utilities globally
-npm install -g yo gulp generator-webapp cca browser-sync weinre 
-
-# Install composer 
-curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=bin
-
-# Install OSX settings
-source ~/.osx
+# Install oh-my-zsh
+curl -L http://install.ohmyz.sh | sh
