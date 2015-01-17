@@ -36,6 +36,7 @@ BREW_CASK_PACK=(\
     libreoffice \
     mysqlworkbench \
     skype \
+    squire \
     steam \
     transmission \
     trim-enabler \
