@@ -27,3 +27,12 @@ brew cask install android-studio google-chrome imagealpha imageoptim libreoffice
 # Installing Node.JS components that I need
 npm install -g gulp browser-sync bower grunt grunt-cli yo generator-webapp
 
+# Installing vim Vundle
+vundle_dir="${HOME}/.vim/bundle/vundle"
+vundle_repository="https://github.com/gmarik/vundle.git"
+if [ ! -d "${vundle_dir}" ]; then
+        git clone -q "${vundle_repository}" "${vundle_dir}"
+        fi
+
+# Install the plugins
+vim -c "BundleInstall" -c "qa"
