@@ -36,3 +36,8 @@ if [ ! -d "${vundle_dir}" ]; then
 
 # Install the plugins
 vim -c "BundleInstall" -c "qa"
+
+# Some OSX settings
+
+# Don't create .DS_Store files on network shares (need logout / login) 
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
