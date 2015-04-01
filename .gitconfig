@@ -1,5 +1,5 @@
 [push]
-	default = simple
+	default = matching 
 
 [user]
     name = Babos Csaba 
