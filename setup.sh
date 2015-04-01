@@ -44,4 +44,4 @@ vim -c "BundleInstall" -c "qa"
 mkdir -p .mpd/playlists
 
 # Install node.js
-./install-node-js.sh
+#./install-node-js.sh
