@@ -16,6 +16,8 @@ Plugin 'gmarik/vundle'
 Plugin 'mattn/emmet-vim'
 " Javascript syntax highlight and indentation
 Plugin 'pangloss/vim-javascript'
+" JSHint
+Plugin 'Shutnik/jshint2.vim'
 " Editorconfig
 Plugin 'editorconfig/editorconfig-vim'
 " Markdown
@@ -24,8 +26,15 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdtree'
 " HTML5 syntax highlight
 Plugin 'othree/html5.vim'
-" Solarized Dark
-Plugin 'altercation/vim-colors-solarized'
+" LESS plugin
+Plugin 'groenewege/vim-less'
+" CTRL + p file search
+Plugin 'kien/ctrlp.vim'
+" Vim sessions
+Plugin 'tpope/vim-obsession'
+" Jade plugin
+Plugin 'digitaltoad/vim-jade'
+
 
 " Preferences
 "   Presentation
@@ -47,7 +56,7 @@ set listchars=tab:\ \ ,trail:\ ,extends:#,nbsp:.
 
 "   Theme
 set background=dark
-colorscheme solarized 
+colorscheme desert 
 
 "   Behaviour
                           " Don't make a backup before overwriting a

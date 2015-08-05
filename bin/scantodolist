@@ -1,0 +1,5 @@
+#!/bin/bash
+
+WATCH_DIRS=(/Volumes/DATA/WorkFiles/Web/Yourweb /Volumes/DATA/WorkFiles/Web/BDI)
+
+

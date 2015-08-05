@@ -1,0 +1,25 @@
+#! /usr/bin/env bash
+
+wget "http://twig.sensiolabs.org/pdf/Twig.pdf" \
+    -O "Sensiolabs/The Twig Book (122)/The Twig Book - Sensiolabs.pdf"
+
+wget "http://symfony.com/pdf/Symfony_book_master.pdf" \
+    -O "Sensiolabs/The Symfony2 Book (119)/The Symfony2 Book - Sensiolabs.pdf"
+
+wget "http://symfony.com/pdf/Symfony_cookbook_master.pdf" \
+    -O "Sensiolabs/The Symfony2 Cookbook (120)/The Symfony2 Cookbook - Sensiolabs.pdf"
+
+wget "http://symfony.com/pdf/Symfony_best_practices_master.pdf" \
+    -O "Sensiolabs/The Symfony2 Best Practices Book (224)/The Symfony2 Best Practices Book - Sensiolabs.pdf"
+
+wget "http://silex.sensiolabs.org/pdf/Silex.pdf" \
+    -O "Sensiolabs/The Silex Book (117)/The Silex Book - Sensiolabs.pdf"
+
+wget "http://swiftmailer.org/pdf/Swiftmailer.pdf" \
+    -O "Sensiolabs/The Swiftmailer Book (118)/The Swiftmailer Book - Sensiolabs.pdf"
+
+wget "https://github.s3.amazonaws.com/media/progit.en.pdf" \
+    -O "Scott Chacon/Pro Git (133)/Pro Git - Scott Chacon.pdf"
+
+wget "https://github.s3.amazonaws.com/media/pro-git.en.mobi" \
+    -O "Scott Chacon/Pro Git (133)/Pro Git - Scott Chacon.mobi"
