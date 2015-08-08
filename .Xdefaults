@@ -1,0 +1,3 @@
+xterm*dynamicColors:    true
+xterm*background:       #111111
+xterm*foreground:       #999999
