@@ -28,12 +28,10 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'othree/html5.vim'
 " LESS plugin
 Plugin 'groenewege/vim-less'
-" CTRL + p file search
-Plugin 'kien/ctrlp.vim'
-" Vim sessions
-Plugin 'tpope/vim-obsession'
-" Jade plugin
-Plugin 'digitaltoad/vim-jade'
+" Colorschemes 
+Plugin 'flazz/vim-colorschemes'
+" Airline
+Plugin 'Bling/vim-airline'
 
 
 " Preferences
@@ -56,7 +54,7 @@ set listchars=tab:\ \ ,trail:\ ,extends:#,nbsp:.
 
 "   Theme
 set background=dark
-colorscheme desert 
+colorscheme Tomorrow-Night-Eighties 
 
 "   Behaviour
                           " Don't make a backup before overwriting a
