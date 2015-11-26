@@ -15,7 +15,7 @@ Plugin 'gmarik/vundle'
 " Install emmet for vim
 Plugin 'mattn/emmet-vim'
 " Javascript syntax highlight and indentation
-Plugin 'pangloss/vim-javascript'
+"Plugin 'pangloss/vim-javascript'
 " JSHint
 Plugin 'Shutnik/jshint2.vim'
 " Editorconfig
@@ -32,7 +32,16 @@ Plugin 'groenewege/vim-less'
 Plugin 'flazz/vim-colorschemes'
 " Airline
 Plugin 'Bling/vim-airline'
+" ES6 syntax
+Plugin 'othree/yajs.vim'
 
+" Goyo
+Plugin 'junegunn/goyo.vim'
+
+" Limelight 
+Plugin 'junegunn/limelight.vim'
+
+Limelight0.6
 
 " Preferences
 "   Presentation
@@ -118,6 +127,7 @@ set backspace=indent,eol,start
                                   " Yank text to the OS X clipboard
         map <leader>y "+y
         map <leader>Y "+Y
+        map <leader>g :Goyo<cr>
 
                                   " Preserve indentation while pasting text " from the OS X clipboard noremap <leader>p :set paste<cr>:put *<cr>:set nopaste<cr>
         map <leader>P :set paste<cr>:put! +<cr>:set nopaste<cr>
@@ -175,4 +185,31 @@ set backspace=indent,eol,start
         onoremap ip i<
         onoremap ap a<
     " }}}
+
+ let g:rbpt_colorpairs = [
+     \ ['brown',       'RoyalBlue3'],
+     \ ['Darkblue',    'SeaGreen3'],
+     \ ['darkgray',    'DarkOrchid3'],
+     \ ['darkgreen',   'firebrick3'],
+     \ ['darkcyan',    'RoyalBlue3'],
+     \ ['darkred',     'SeaGreen3'],
+     \ ['darkmagenta', 'DarkOrchid3'],
+     \ ['brown',       'firebrick3'],
+     \ ['gray',        'RoyalBlue3'],
+     \ ['black',       'SeaGreen3'],
+     \ ['darkmagenta', 'DarkOrchid3'],
+     \ ['Darkblue',    'firebrick3'],
+     \ ['darkgreen',   'RoyalBlue3'],
+     \ ['darkcyan',    'SeaGreen3'],
+     \ ['darkred',     'DarkOrchid3'],
+     \ ['red',         'firebrick3'],
+     \ ]
+
+ let g:rbpt_max = 16
+ let g:rbpt_loadcmd_toggle = 0
+
+ au VimEnter * RainbowParenthesesToggle
+ au Syntax * RainbowParenthesesLoadRound
+ au Syntax * RainbowParenthesesLoadSquare
+ au Syntax * RainbowParenthesesLoadBraces
 
