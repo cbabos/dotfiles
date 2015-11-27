@@ -24,6 +24,8 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'plasticboy/vim-markdown'
 " Nerdtree
 Plugin 'scrooloose/nerdtree'
+" Nerdtree-git
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 " HTML5 syntax highlight
 Plugin 'othree/html5.vim'
 " LESS plugin
@@ -34,12 +36,12 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'Bling/vim-airline'
 " ES6 syntax
 Plugin 'othree/yajs.vim'
-
 " Goyo
 Plugin 'junegunn/goyo.vim'
-
 " Limelight 
 Plugin 'junegunn/limelight.vim'
+" ctrlp
+Plugin 'kien/ctrlp.vim'
 
 " Preferences
 "   Presentation
@@ -208,3 +210,6 @@ set backspace=indent,eol,start
 
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
+
+let g:ctrlp_user_command = ['*.meta', '.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
