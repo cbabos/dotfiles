@@ -1,8 +1,9 @@
 "execute pathogen#infect()
 
 " Chair: http://jysk.hu/dolgozoszoba/irodaszekek/plus/irodaszek-billum-fekete
-" Desk: http://jysk.hu/dolgozoszoba/iro-szamgepasztalok/iroasztal-karup-1-fiokos-bukk
-"       http://jysk.hu/dolgozoszoba/iro-szamgepasztalok/iroasztal-jeksen-uveg-fem
+" Desk:  http://jysk.hu/dolgozoszoba/iro-szamgepasztalok/iroasztal-karup-1-fiokos-bukk
+"        http://jysk.hu/dolgozoszoba/iro-szamgepasztalok/iroasztal-jeksen-uveg-fem
+" Bed:   http://jysk.hu/haloszoba/komplett-agyak/ubby-komplett-140x200-basic-s15-natur
 
 set nocompatible
 let mapleader=','
