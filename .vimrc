@@ -1,5 +1,9 @@
 "execute pathogen#infect()
 
+" Chair: http://jysk.hu/dolgozoszoba/irodaszekek/plus/irodaszek-billum-fekete
+" Desk: http://jysk.hu/dolgozoszoba/iro-szamgepasztalok/iroasztal-karup-1-fiokos-bukk
+"       http://jysk.hu/dolgozoszoba/iro-szamgepasztalok/iroasztal-jeksen-uveg-fem
+
 set nocompatible
 let mapleader=','
 let g:mapleader=','
