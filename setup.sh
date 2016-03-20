@@ -46,4 +46,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 # Install iTerm2 color scheme
 open dimmedmonokai.itermcolors 
 
+# Install Powerline fonts
+git clone https://github.com/powerline/fonts.git ~/fonts
+~/fonts/install.sh
+rm -Rf ~/fonts
+
 
