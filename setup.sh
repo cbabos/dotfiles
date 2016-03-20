@@ -43,10 +43,7 @@ vim -c "BundleInstall" -c "qa"
 # Don't create .DS_Store files on network shares (need logout / login) 
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
-# Install Inconsolata font
-cp "Inconsolata-g for Powerline.otf" ~/Library/Fonts/
-
 # Install iTerm2 color scheme
-open flatland.itermcolors 
+open dimmedmonokai.itermcolors 
 
 
