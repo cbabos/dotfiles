@@ -16,8 +16,7 @@ copyDotFiles()
 
 # Updating and upgrading brew
 # Later (after we activated zsh with oh-my-zsh) you can use `bubu` alias for this
-
-brew update
+brew update 
 brew upgrade
 
 # Installing basic toolchain
@@ -48,6 +47,6 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 cp "Inconsolata-g for Powerline.otf" ~/Library/Fonts/
 
 # Install iTerm2 color scheme
-open tomorrow-night-eighties.itermcolors 
+open flatland.itermcolors 
 
 
