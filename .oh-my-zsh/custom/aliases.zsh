@@ -6,6 +6,7 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 alias v="vim"
+alias glg="g lg"
 
 # Aliases
 alias lsd="ls -d *(/)" # List only directories
