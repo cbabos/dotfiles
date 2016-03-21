@@ -30,8 +30,6 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'othree/html5.vim'
 " LESS plugin
 Plugin 'groenewege/vim-less'
-" Colorschemes 
-Plugin 'flazz/vim-colorschemes'
 " Airline
 Plugin 'Bling/vim-airline'
 " ES6 syntax
@@ -42,6 +40,8 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 " ctrlp
 Plugin 'kien/ctrlp.vim'
+" Vim resurrect (for tmux resurrect)
+Plugin 'tpope/vim-obsession'
 
 " Preferences
 "   Presentation
@@ -63,7 +63,7 @@ set listchars=tab:\ \ ,trail:\ ,extends:#,nbsp:.
 
 "   Theme
 set background=dark
-colorscheme Tomorrow-Night-Eighties 
+colorscheme desert 
 
 "   Behaviour
                           " Don't make a backup before overwriting a
