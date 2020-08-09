@@ -7,6 +7,7 @@ alias h="history"
 alias j="jobs"
 alias v="vim"
 alias glg="g lg"
+alias ll="ls -lah"
 alias gc="git commit"
 
 # Aliases
