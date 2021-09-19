@@ -16,6 +16,8 @@ Plugin 'gmarik/vundle'
 Plugin 'mattn/emmet-vim'
 " Javascript syntax highlight and indentation
 "Plugin 'pangloss/vim-javascript'
+" solarized
+Plugin 'lifepillar/vim-solarized8'
 " JSHint
 Plugin 'Shutnik/jshint2.vim'
 " Editorconfig
@@ -63,7 +65,7 @@ set listchars=tab:\ \ ,trail:\ ,extends:#,nbsp:.
 
 "   Theme
 set background=dark
-colorscheme desert 
+colorscheme solarized8 
 
 "   Behaviour
                           " Don't make a backup before overwriting a
