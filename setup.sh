@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # This function will sync dotfiles to the homefolder
-function copyDotFiles() {
+copyDotFiles () {
   rsync --exclude ".git/" --exclude "setup.sh" --exclude "README.md" avh --no-perms . ~;
 }
 
