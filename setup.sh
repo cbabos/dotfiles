@@ -6,10 +6,10 @@ function copyDotFiles() {
 }
 
 # Install oh-my-zsh
-curl -L http://install.ohmyz.sh | sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install my dotfiles
 copyDotFiles()
@@ -20,13 +20,10 @@ brew update
 brew upgrade
 
 # Installing basic toolchain
-brew install coreutils moreutils findutils zsh homebrew/dupes/grep caskroom/cask/brew-cask ack pv git lynx nmap pigz rename rhino tree webkit2png zopfli p7zip vim --override-system-vi imagemagick --with-webp lua node tmux
-
-# Installing Native Apps
-brew cask install java android-studio google-chrome iterm2 imagealpha imageoptim libreoffice skype steam 
+brew install zsh tree vim --override-system-vi node tmux oracle-jdk iterm2 imageoptim steam
 
 # Installing Node.JS components that I need
-npm install -g gulp browser-sync bower 
+npm install -g npm 
 
 # Installing vim Vundle
 vundle_dir="${HOME}/.vim/bundle/vundle"
@@ -37,8 +34,6 @@ if [ ! -d "${vundle_dir}" ]; then
 
 # Install the plugins
 vim -c "BundleInstall" -c "qa"
-
-# Some OSX settings
 
 # Don't create .DS_Store files on network shares (need logout / login) 
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
