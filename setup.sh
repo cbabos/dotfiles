@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # This function will sync dotfiles to the homefolder
 function copyDotFiles() {
@@ -13,6 +13,8 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 # Install my dotfiles
 copyDotFiles()
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Updating and upgrading brew
 # Later (after we activated zsh with oh-my-zsh) you can use `bubu` alias for this
@@ -20,7 +22,7 @@ brew update
 brew upgrade
 
 # Installing basic toolchain
-brew install zsh tree vim --override-system-vi node tmux oracle-jdk iterm2 imageoptim steam
+brew install zsh tree vim node tmux oracle-jdk iterm2 imageoptim steam unity-hub jetbrains-toolbox webex-meetings obs 
 
 # Installing Node.JS components that I need
 npm install -g npm 
