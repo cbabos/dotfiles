@@ -51,7 +51,7 @@ ZSH_THEME="dst"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(z yii bower brew brew-cask colored-man npm osx rsync themes copydir git)
+plugins=(z yii bower brew npm osx rsync themes copydir git)
 
 source $ZSH/oh-my-zsh.sh
 
