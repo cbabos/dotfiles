@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="dst"
+ZSH_THEME="lambda"
 
 # Set the default user name (don't show host on localhost)
 # DEFAULT_USER=$(whoami) # For some reason it's not working with dst theme
@@ -51,7 +51,7 @@ ZSH_THEME="dst"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(z yii bower brew npm macos rsync themes copydir git)
+plugins=(z bower brew npm macos rsync themes git)
 
 source $ZSH/oh-my-zsh.sh
 
