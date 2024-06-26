@@ -22,10 +22,7 @@ brew update
 brew upgrade
 
 # Installing basic toolchain
-brew install zsh tree vim node tmux oracle-jdk iterm2 imageoptim steam unity-hub jetbrains-toolbox webex-meetings obs 
-
-# Installing Node.JS components that I need
-npm install -g npm 
+brew install zsh tree vim node tmux iterm2 imageoptim 
 
 # Installing vim Vundle
 vundle_dir="${HOME}/.vim/bundle/vundle"
