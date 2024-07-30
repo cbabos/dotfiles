@@ -2,7 +2,7 @@
 
 # This function will sync dotfiles to the homefolder
 function copyDotFiles() {
-  rsync --exclude ".git/" --exclude "setup.sh" --exclude "README.md" avh --no-perms . ~;
+  rsync --exclude ".git/" --exclude "setup.sh" --exclude "README.md" --exclude "iterm2profile" -avh --no-perms . ~;
 }
 
 copyDotFiles()
@@ -23,34 +23,19 @@ brew update
 brew upgrade
 
 # Installing basic toolchain
-brew install zsh tree vim node tmux iterm2 imageoptim 
+brew install zsh tree nvim iterm2 font-fira-code-nerd-font
 
-# Installing vim Vundle
-vundle_dir="${HOME}/.vim/bundle/vundle"
-vundle_repository="https://github.com/gmarik/vundle.git"
-if [ ! -d "${vundle_dir}" ]; then
-        git clone -q "${vundle_repository}" "${vundle_dir}"
-        fi
+# Install additional devtools 
+brew install node imageoptim 
 
-# Install the plugins
-vim -c "BundleInstall" -c "qa"
+# install additional software
+brew install steam freecad
 
 # Don't create .DS_Store files on network shares (need logout / login) 
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
-# Install iTerm2 color scheme
-open dimmedmonokai.itermcolors 
+# Apply my profile for iTerm2
+defaults import com.googlecode.iterm2 iterm2profile.plist
 
-# Install Powerline fonts
-git clone https://github.com/powerline/fonts.git ~/fonts
-~/fonts/install.sh
-rm -Rf ~/fonts
-
-# Create tmux config folder
-mkdir -p ~/.tmux/plugins
-
-# Install tmux package manager
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-# Install tmux plugins
-~/.tmux/plugins/tpm/bin/install_plugins
+# Setup crontab  
+crontab .crontab

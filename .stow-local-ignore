@@ -1,6 +1,0 @@
-.git
-.gitignore
-^/.*~
-^/.*\.(md|sh)
-^/.vim
-^/.oh-my-zsh

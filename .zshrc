@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="lambda"
+ZSH_THEME="agnoster"
 
 # Set the default user name (don't show host on localhost)
 # DEFAULT_USER=$(whoami) # For some reason it's not working with dst theme
@@ -51,7 +51,7 @@ ZSH_THEME="lambda"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(z bower brew npm macos rsync themes git)
+plugins=(z yii bower brew npm macos rsync themes git gitignore)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -67,7 +67,7 @@ export PATH="$HOME/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:
 if [[ -n $SSH_CONNECTION ]]; then
     export EDITOR='vim'
 else
-    export EDITOR='mvim'
+    export EDITOR='nvim'
 fi
 
 # Compilation flags
