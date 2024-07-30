@@ -1,6 +1,8 @@
 #!/bin/sh
 cd "$(dirname "$0")"
 
+cd "$(dirname "$0")"
+
 ## Backup nvim
 rsync -azv ~/.config/nvim .
 
@@ -14,5 +16,7 @@ crontab -l > .crontab
 if [[ `git status --porcelain` ]]; then
 	git add .
 	git commit -m 'Updated dotfiles - autobackup'
+	git push origin main
 fi
+
 

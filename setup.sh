@@ -1,8 +1,7 @@
 #!/bin/zsh
 
 # This function will sync dotfiles to the homefolder
-function copyDotFiles() {
-  rsync --exclude ".git/" --exclude "setup.sh" --exclude "README.md" --exclude "iterm2profile" -avh --no-perms . ~;
+function copyDotFiles() { rsync --exclude ".git/" --exclude "setup.sh" --exclude "README.md" --exclude "iterm2profile" -avh --no-perms . ~;
 }
 
 copyDotFiles()
@@ -26,7 +25,7 @@ brew upgrade
 brew install zsh tree nvim iterm2 font-fira-code-nerd-font
 
 # Install additional devtools 
-brew install node imageoptim 
+brew install node
 
 # install additional software
 brew install steam freecad
