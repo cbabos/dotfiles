@@ -2,6 +2,7 @@ vim.opt.shiftwidth= 4
 vim.opt.tabstop = 4
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
+vim.opt.colorcolumn = "80"
 
 vim.o.number = true;
 vim.o.relativenumber = true;
