@@ -38,3 +38,14 @@ defaults import com.googlecode.iterm2 iterm2profile.plist
 
 # Setup crontab  
 crontab .crontab
+
+# Setup vim (as a backup besides neoVim)
+# Installing vim Vundle
+vundle_dir="${HOME}/.vim/bundle/vundle"
+vundle_repository="https://github.com/gmarik/vundle.git"
+if [ ! -d "${vundle_dir}" ]; then
+        git clone -q "${vundle_repository}" "${vundle_dir}"
+        fi
+
+# Install the plugins
+vim -c "BundleInstall" -c "qa"

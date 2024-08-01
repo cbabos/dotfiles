@@ -7,6 +7,7 @@ cd "$(dirname "$0")"
 rsync -azv ~/.config/nvim .
 
 cp ~/.oh-my-zsh/custom/aliases.zsh ./.oh-my-zsh/custom/
+cp ~/.vimrc .
 cp ~/.{gitconfig,gitignore-global} .
 cp ~/.zshrc .
 
