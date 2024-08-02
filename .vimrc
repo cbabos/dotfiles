@@ -30,6 +30,7 @@ Plugin 'ayu-theme/ayu-vim' " or other package manager
 Plugin 'prabirshrestha/vim-lsp'
 Plugin 'mattn/vim-lsp-settings'
 
+
 "...
 set termguicolors     " enable true colors support
 let ayucolor="light"  " for light version of theme
@@ -43,9 +44,10 @@ let ayucolor="dark"   " for dark version of theme
 set tabpagemax=50
 set smartindent expandtab shiftwidth=4 tabstop=4
 filetype plugin on
-set colorcolumn=81
+set colorcolumn=80
 set title
 set showmode
+set re=2
 syntax enable
 set number
 set relativenumber
@@ -96,18 +98,6 @@ set backspace=indent,eol,start
         nnoremap <c-k> <c-w>k
         nnoremap <c-l> <c-w>l
 
-                                  " Clear the search buffer when hitting return
-        nnoremap <cr> :nohlsearch<cr>
-                                  " Toggle search results
-                                  nnoremap <f3> :set hlsearch!<cr>
-
-                                  " Resize vertical splits
-        nnoremap <silent> <leader>+ :execute 'vertical resize ' . (winwidth(0) * 12/10)<cr>
-        nnoremap <silent> <leader>- :execute 'vertical resize ' . (winwidth(0) * 8/10)<cr>
-
-                                  " Don't move on *
-        nnoremap * *<c-o>
-
                                   " Open todo.md
         nnoremap <leader>et :tabnew ~/Documents/todo.md<cr>
 
@@ -126,8 +116,8 @@ set backspace=indent,eol,start
         map <leader>p :set paste<cr>:put! +<cr>:set nopaste<cr>
         map <leader>nt :NERDTree<cr>
 
-                                  " Get the path of the current file
-        noremap <c-i> :echo expand("%:p")<cr>
+        map gca :LspCodeAction<cr>
+
     " }}}
 
     " visual mode {{{
