@@ -38,11 +38,6 @@ let ayucolor="light"  " for light version of theme
 let ayucolor="mirage" " for mirage version of theme
 let ayucolor="dark"   " for dark version of theme
 
-" allow modifying the completeopt variable, or it will
-" be overridden all the time
-let g:asyncomplete_auto_completeopt = 0
-
-set completeopt=menuone,noinsert,noselect,preview
 
 " Preferences
 "   Presentation
@@ -74,10 +69,10 @@ set nobackup nowritebackup
                           " Keep swap files in one location
 set directory=~/.vim/swap
 
-set spelllang=hu          " Set spelling language
 set hidden                " Handle multiple buffers better
 
-set hlsearch              " Highlight matches
+set hlsearch!
+set incsearch              " Highlight matches
 set ignorecase            " Case-insensitive searching
 set smartcase             " But case-sensitive if expression contains a
                           " capital letter
@@ -164,26 +159,6 @@ set backspace=indent,eol,start
 
     " }}}
 
-    " command-line mode {{{
-                                  " Use :w!! to save with sudo
-        cnoremap w!! w !sudo tee % >/dev/null
-                                  " Commonly misspelled commands
-        command! Q q
-        command! W w
-        command! WQ wq
-        command! Wq wq
-    " }}}
-
-    " operator-pending mappings {{{
-        onoremap is i[
-        onoremap as a[
-        onoremap ic i{
-        onoremap ac a{
-        onoremap ir i(
-        onoremap ar a(
-        onoremap ip i<
-        onoremap ap a<
-    " }}}
 
  let g:rbpt_colorpairs = [
      \ ['brown',       'RoyalBlue3'],
