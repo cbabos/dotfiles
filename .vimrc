@@ -29,8 +29,6 @@ Plugin 'ayu-theme/ayu-vim' " or other package manager
 " LSP
 Plugin 'prabirshrestha/vim-lsp'
 Plugin 'mattn/vim-lsp-settings'
-Plugin 'prabirshrestha/asyncomplete.vim'
-Plugin 'prabirshrestha/asyncomplete-lsp.vim'
 
 "...
 set termguicolors     " enable true colors support
@@ -127,20 +125,9 @@ set backspace=indent,eol,start
         map <leader>P :set paste<cr>:put! +<cr>:set nopaste<cr>
         map <leader>p :set paste<cr>:put! +<cr>:set nopaste<cr>
         map <leader>nt :NERDTree<cr>
-        map <leader>b :Bookmark 
 
                                   " Get the path of the current file
         noremap <c-i> :echo expand("%:p")<cr>
-    " }}}
-
-    " insert mode {{{
-        inoremap wq <esc>
-        inoremap qw <esc>
-
-                                  " Toggle search results
-        inoremap <f3> <esc>:set hlsearch!<cr>a
-                                  " Toggle spell checking
-        inoremap <f4> <esc>:set spell!<cr>a
     " }}}
 
     " visual mode {{{
@@ -158,29 +145,6 @@ set backspace=indent,eol,start
         vnoremap ap a<
 
     " }}}
-
-
- let g:rbpt_colorpairs = [
-     \ ['brown',       'RoyalBlue3'],
-     \ ['Darkblue',    'SeaGreen3'],
-     \ ['darkgray',    'DarkOrchid3'],
-     \ ['darkgreen',   'firebrick3'],
-     \ ['darkcyan',    'RoyalBlue3'],
-     \ ['darkred',     'SeaGreen3'],
-     \ ['darkmagenta', 'DarkOrchid3'],
-     \ ['brown',       'firebrick3'],
-     \ ['gray',        'RoyalBlue3'],
-     \ ['black',       'SeaGreen3'],
-     \ ['darkmagenta', 'DarkOrchid3'],
-     \ ['Darkblue',    'firebrick3'],
-     \ ['darkgreen',   'RoyalBlue3'],
-     \ ['darkcyan',    'SeaGreen3'],
-     \ ['darkred',     'DarkOrchid3'],
-     \ ['red',         'firebrick3'],
-     \ ]
-
- let g:rbpt_max = 16
- let g:rbpt_loadcmd_toggle = 0
 
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
