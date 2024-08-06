@@ -1,5 +1,5 @@
 {
-  "LuaSnip": { "branch": "master", "commit": "ce0a05ab4e2839e1c48d072c5236cce846a387bc" },
+  "LuaSnip": { "branch": "master", "commit": "7552e6504ee95a9c8cfc6db53e389122ded46cd4" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "39e2eda76828d88b773cc27a3f61d2ad782c922d" },
   "lazy.nvim": { "branch": "main", "commit": "077102c5bfc578693f12377846d427f49bc50076" },
   "lsp-zero.nvim": { "branch": "v3.x", "commit": "56db3d5ce5476b183783160e6045f7337ba12b83" },
@@ -13,6 +13,6 @@
   "nvim-web-devicons": { "branch": "master", "commit": "5be6c4e685618b99c3210a69375b38a1202369b4" },
   "plenary.nvim": { "branch": "master", "commit": "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683" },
   "starry-vim-colorschemes": { "branch": "master", "commit": "538e9214c3f96c729f223c8fc198323c3d9123b8" },
-  "tailwind-tools.nvim": { "branch": "master", "commit": "9baed3c610bc80299046db02d26e5deb66323c36" },
+  "tailwind-tools.nvim": { "branch": "master", "commit": "72f01ba654ffaf382c1df996b77cc53ec7860f70" },
   "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" }
 }
