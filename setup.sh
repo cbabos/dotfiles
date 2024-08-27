@@ -1,10 +1,8 @@
 #!/bin/zsh
 
 # This function will sync dotfiles to the homefolder
-function copyDotFiles() { rsync --exclude ".git/" --exclude "setup.sh" --exclude "README.md" --exclude "iterm2profile" -avh --no-perms . ~;
-}
+rsync --exclude ".git/" --exclude "updateconfig.sh" --exclude "setup.sh" --exclude "README.md" --exclude "iterm2profile" -avh --no-perms . ~
 
-copyDotFiles()
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -26,9 +24,6 @@ brew install zsh tree nvim iterm2 font-fira-code-nerd-font
 
 # Install additional devtools 
 brew install node
-
-# install additional software
-brew install steam freecad
 
 # Don't create .DS_Store files on network shares (need logout / login) 
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
