@@ -36,3 +36,6 @@ vim.keymap.set('n', '<leader>bf', ':Explore!<Enter>')
 -- Coding 
 vim.keymap.set('n', 'gca', vim.lsp.buf.code_action);
 
+-- Edit panes
+vim.keymap.set('n', '<leader>vs', ':vsplit<Enter>');
+vim.keymap.set('n', '<leader>hs', ':hsplit<Enter>');
