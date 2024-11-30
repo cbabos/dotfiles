@@ -78,8 +78,4 @@ fi
 
 alias vim=nvim
 
-export VULKAN_SDK=~/VulkanSDK/1.3.296.0/
-export PATH=$VULKAN_SDK/bin:$PATH
-export LD_LIBRARY_PATH=$VULKAN_SDK/lib:$LD_LIBRARY_PATH
-export VK_ICD_FILENAMES=$VULKAN_SDK/etc/vulkan/icd.d
-export VK_LAYER_PATH=$VULKAN_SDK/etc/vulkan/explicit_layer.d
+source ~/VulkanSDK/vulkan/setup-env.sh
