@@ -14,5 +14,6 @@
   "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },
   "starry-vim-colorschemes": { "branch": "master", "commit": "538e9214c3f96c729f223c8fc198323c3d9123b8" },
   "tailwind-tools.nvim": { "branch": "master", "commit": "3703e162d819a04b128902c508276553dae0dfb8" },
-  "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" }
+  "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
+  "vim-glsl": { "branch": "master", "commit": "40dd0b143ef93f3930a8a409f60c1bb85e28b727" }
 }
