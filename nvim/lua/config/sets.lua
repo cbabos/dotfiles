@@ -8,7 +8,7 @@ vim.o.number = true;
 vim.o.relativenumber = true;
 
 vim.o.background = "dark"
-vim.cmd.colorscheme "ayu"
+vim.cmd.colorscheme "retrobox"
 
 -- Maps
 -- Half screen jumps
