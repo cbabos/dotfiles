@@ -38,4 +38,10 @@ vim.keymap.set('n', 'gca', vim.lsp.buf.code_action);
 
 -- Edit panes
 vim.keymap.set('n', '<leader>vs', ':vsplit<Enter>');
-vim.keymap.set('n', '<leader>hs', ':hsplit<Enter>');
+vim.keymap.set('n', '<leader>hs', ':split<Enter>');
+
+-- Terminal mode
+vim.keymap.set('n', '<leader>t', ':terminal<Enter>');
+
+-- Todo
+vim.keymap.set('n', '<leader>et', ':vsplit<Enter>:e ~/Todo.md<Enter>');
