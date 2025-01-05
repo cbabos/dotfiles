@@ -41,7 +41,7 @@ vim.keymap.set('n', '<leader>vs', ':vsplit<Enter>');
 vim.keymap.set('n', '<leader>hs', ':split<Enter>');
 
 -- Terminal mode
-vim.keymap.set('n', '<leader>t', ':terminal<Enter>');
+vim.keymap.set('n', '<leader>t', ':split<Enter>:terminal<Enter>i');
 
 -- Todo
 vim.keymap.set('n', '<leader>et', ':vsplit<Enter>:e ~/Todo.md<Enter>');
