@@ -80,3 +80,8 @@ alias vim=nvim
 
 source ~/VulkanSDK/vulkan/setup-env.sh
 export STB_INCLUDE_PATH=~/work/cpp/stb
+export OLLAMA_API_KEY="ollama-local"
+
+
+# OpenClaw Completion
+source "/Users/cbabos/.openclaw/completions/openclaw.zsh"
