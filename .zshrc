@@ -87,3 +87,8 @@ export OLLAMA_REQUEST_TIMEOUT=600s
 
 # OpenClaw Completion
 source "/Users/cbabos/.openclaw/completions/openclaw.zsh"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/cbabos/.lmstudio/bin"
+# End of LM Studio CLI section
+
