@@ -81,6 +81,8 @@ alias vim=nvim
 source ~/VulkanSDK/vulkan/setup-env.sh
 export STB_INCLUDE_PATH=~/work/cpp/stb
 export OLLAMA_API_KEY="ollama-local"
+export OLLAMA_KEEP_ALIVE=24h
+export OLLAMA_REQUEST_TIMEOUT=600s
 
 
 # OpenClaw Completion
