@@ -1,2 +1,1 @@
 0 * * * * ~/work/dotfiles/updateconfig.sh
-0 6 * * * /Users/cbabos/.openclaw/workspace/daily_email_briefing.sh >> /tmp/email-briefing.log 2>&1
