@@ -92,3 +92,4 @@ source "/Users/cbabos/.openclaw/completions/openclaw.zsh"
 export PATH="$PATH:/Users/cbabos/.lmstudio/bin"
 # End of LM Studio CLI section
 
+export PATH=$PATH:/Users/cbabos/.local/bin
