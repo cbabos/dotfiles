@@ -1,1 +1,2 @@
 0 * * * * ~/work/dotfiles/updateconfig.sh
+*/120 * * * * /Users/cbabos/.openclaw/workspace/scripts/cleanup-emails.sh >> ~/work/logs/email-cleanup.log 2>&1
